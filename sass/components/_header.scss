@@ -1,0 +1,13 @@
+#header {
+  background: url("../images/header-bkg.jpg") no-repeat center;
+  border-top: 8px solid $blue;
+  height: 100vh;
+  h1 {
+    height: 64px;
+    background: url("../images/logo-white.png") no-repeat center;
+  }
+
+  .btn-group [class*="btn"]{
+    min-width: 230px;
+  }
+}

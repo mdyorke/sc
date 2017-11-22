@@ -1,0 +1,37 @@
+$base-font-size: 16;
+$spacer: 8;
+
+// Colors
+$blue: #1380EB;
+
+// White
+$white: #fff;
+$white-90: rgba(255,255,255,0.9);
+$white-80: rgba(255,255,255,0.8);
+$white-70: rgba(255,255,255,0.7);
+$white-60: rgba(255,255,255,0.6);
+$white-50: rgba(255,255,255,0.5);
+$white-40: rgba(255,255,255,0.4);
+$white-30: rgba(255,255,255,0.3);
+$white-20: rgba(255,255,255,0.2);
+$white-10: rgba(255,255,255,0.1);
+
+// Charcoal
+$charcoal: #121212;
+$charcoal-90: rgba(18,18,18,0.9);
+$charcoal-80: rgba(18,18,18,0.8);
+$charcoal-70: rgba(18,18,18,0.7);
+$charcoal-60: rgba(18,18,18,0.6);
+$charcoal-50: rgba(18,18,18,0.5);
+$charcoal-40: rgba(18,18,18,0.4);
+$charcoal-30: rgba(18,18,18,0.3);
+$charcoal-20: rgba(18,18,18,0.2);
+$charcoal-10: rgba(18,18,18,0.1);
+
+// Breakpoints
+$bp-min-sm: 30em;
+$bp-min-md: 40em;
+$bp-min-lg: 60em;
+$bp-max-sm: 29.99em;
+$bp-max-md: 39.99em;
+$bp-max-lg: 59.99em;

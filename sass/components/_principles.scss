@@ -1,0 +1,15 @@
+.principles {
+  background: url("../images/founding-principles-bkg.jpg") no-repeat center;
+
+  .container > div {
+    background-color: $charcoal-80;
+  }
+
+  .container > div:not(.company-breif) {
+    width: 31%;
+  }
+
+  .company-breif {
+    width: 75%;
+  }
+}

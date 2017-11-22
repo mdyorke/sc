@@ -1,0 +1,74 @@
+// Margin Auto
+.mx-a {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.ml-a {
+  margin-left: auto;
+}
+
+.mr-a {
+  margin-right: auto;
+}
+
+.mt-a {
+  margin-left: auto;
+}
+
+.mb-a {
+  margin-left: auto;
+}
+// Margin Top
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-05 {
+  margin-top: 4px;
+}
+@for $mt from 1 through 12 {
+  .mt-#{$mt} {
+    margin-top: ($mt * $spacer) / $base-font-size * 1rem;
+  }
+}
+// Margin Left
+.ml-0 {
+  margin-left: 0 !important;
+}
+
+.ml-05 {
+  margin-left: 4px;
+}
+@for $ml from 1 through 12 {
+  .ml-#{$ml} {
+    margin-left: ($ml * $spacer) / $base-font-size * 1rem;
+  }
+}
+// Margin Right
+.mr-0 {
+  margin-right: 0 !important;
+}
+
+.mr-05 {
+  margin-right: 4px;
+}
+@for $mr from 1 through 12 {
+  .mr-#{$mr} {
+    margin-right: ($mr * $spacer) / $base-font-size * 1rem;
+  }
+}
+// Margin Bottom
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-05 {
+  margin-bottom: 4px;
+}
+@for $mb from 1 through 12 {
+  .mb-#{$mb} {
+    margin-bottom: ($mb * $spacer) / $base-font-size * 1rem;
+  }
+}

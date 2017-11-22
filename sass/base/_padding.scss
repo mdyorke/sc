@@ -1,0 +1,58 @@
+@for $pa from 1 through 12 {
+  .pa-#{$pa} {
+    padding: ($pa * $spacer) / $base-font-size * 1rem;
+  }
+}
+// Padding Top
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pt-05 {
+  padding-top: 4px;
+}
+@for $pt from 1 through 12 {
+  .pt-#{$pt} {
+    padding-top: ($pt * $spacer) / $base-font-size * 1rem;
+  }
+}
+// padding Left
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.pl-05 {
+  padding-left: 4px;
+}
+@for $pl from 1 through 12 {
+  .pl-#{$pl} {
+    padding-left: ($pl * $spacer) / $base-font-size * 1rem;
+  }
+}
+// padding Right
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+.pr-05 {
+  padding-right: 4px;
+}
+@for $pr from 1 through 12 {
+  .pr-#{$pr} {
+    padding-right: ($pr * $spacer) / $base-font-size * 1rem;
+  }
+}
+// padding Bottom
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pb-05 {
+  padding-bottom: 4px;
+}
+@for $pb from 1 through 12 {
+  .pb-#{$pb} {
+    padding-bottom: ($pb * $spacer) / $base-font-size * 1rem;
+  }
+}

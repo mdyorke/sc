@@ -1,0 +1,59 @@
+.cover {
+  background-size: cover!important;
+}
+
+.contain {
+  background-size: contain!important;
+}
+
+// Background Colors
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-dark {
+  background-color: $charcoal;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+// Theme Specific
+.pattern-dark{
+  background-image: url('../images/logo-pattern-white.png');
+  background-size: 40%;
+}
+
+@media (min-width:$bp-min-sm) {
+  .cover-ns {
+    background-size: cover!important;
+  }
+
+  .contain-ns {
+    background-size: contain!important;
+  }
+}
+@media (min-width:$bp-min-md) {
+  .cover-m {
+    background-size: cover!important;
+  }
+
+  .contain-m {
+    background-size: contain!important;
+  }
+}
+@media (min-width:$bp-min-lg) {
+  .cover-l {
+    background-size: cover!important;
+  }
+
+  .contain-l {
+    background-size: contain!important;
+  }
+}
