@@ -6430,35 +6430,30 @@ ul.checklist li:not(:last-child) {
 #section-solutions h2 {
   opacity: 0;
 }
-/* line 45, ../sass/base/_animations.scss */
+/* line 46, ../sass/base/_animations.scss */
+#section-solutions.viewed .manager,
+#section-solutions.viewed .tenant,
 #section-solutions.viewed h2 {
   animation-name: fadeInDown;
   animation-duration: 500ms;
   animation-fill-mode: both;
 }
 /* line 52, ../sass/base/_animations.scss */
-#section-solutions.viewed .manager,
-#section-solutions.viewed .tenant {
-  animation-name: fadeIn;
-  animation-duration: 250ms;
-  animation-fill-mode: both;
-}
-/* line 58, ../sass/base/_animations.scss */
 #section-solutions.viewed .manager {
   animation-delay: 300ms;
 }
-/* line 62, ../sass/base/_animations.scss */
+/* line 56, ../sass/base/_animations.scss */
 #section-solutions.viewed .tenant {
   animation-delay: 750ms;
 }
 
-/* line 71, ../sass/base/_animations.scss */
+/* line 65, ../sass/base/_animations.scss */
 #section-principles .principle,
 #section-principles .principles,
 #section-principles h2 {
   opacity: 0;
 }
-/* line 78, ../sass/base/_animations.scss */
+/* line 72, ../sass/base/_animations.scss */
 #section-principles.viewed .principle,
 #section-principles.viewed .principles,
 #section-principles.viewed h2 {
@@ -6466,41 +6461,41 @@ ul.checklist li:not(:last-child) {
   animation-duration: 750ms;
   animation-fill-mode: both;
 }
-/* line 85, ../sass/base/_animations.scss */
+/* line 79, ../sass/base/_animations.scss */
 #section-principles.viewed .principle,
 #section-principles.viewed .principles {
   animation-name: fadeIn;
   animation-duration: 500ms;
   animation-fill-mode: both;
 }
-/* line 91, ../sass/base/_animations.scss */
+/* line 85, ../sass/base/_animations.scss */
 #section-principles.viewed .principles {
   animation-delay: 250ms;
 }
-/* line 95, ../sass/base/_animations.scss */
+/* line 89, ../sass/base/_animations.scss */
 #section-principles.viewed .innovation {
   animation-delay: 500ms;
 }
-/* line 99, ../sass/base/_animations.scss */
+/* line 93, ../sass/base/_animations.scss */
 #section-principles.viewed .flexibility {
   animation-delay: 800ms;
 }
-/* line 103, ../sass/base/_animations.scss */
+/* line 97, ../sass/base/_animations.scss */
 #section-principles.viewed .support {
   animation-delay: 1200ms;
 }
-/* line 107, ../sass/base/_animations.scss */
+/* line 101, ../sass/base/_animations.scss */
 #section-principles.viewed .company-breif {
   animation-delay: 1500ms;
 }
 
-/* line 114, ../sass/base/_animations.scss */
+/* line 108, ../sass/base/_animations.scss */
 #request .card {
   opacity: 0;
 }
-/* line 119, ../sass/base/_animations.scss */
+/* line 113, ../sass/base/_animations.scss */
 #request.viewed .card {
-  animation-name: fadeIn;
+  animation-name: fadeInDown;
   animation-duration: 500ms;
   animation-fill-mode: both;
 }

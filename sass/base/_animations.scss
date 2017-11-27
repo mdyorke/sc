@@ -41,17 +41,11 @@
   }
 
   &.viewed {
-
+    .manager,
+    .tenant,
     h2 {
       animation-name: fadeInDown;
       animation-duration: 500ms;
-      animation-fill-mode: both;
-    }
-
-    .manager,
-    .tenant{
-      animation-name: fadeIn;
-      animation-duration: 250ms;
       animation-fill-mode: both;
     }
 
@@ -117,7 +111,7 @@
 
   &.viewed {
     .card {
-      animation-name: fadeIn;
+      animation-name: fadeInDown;
       animation-duration: 500ms;
       animation-fill-mode: both;
     }
