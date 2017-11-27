@@ -11,6 +11,7 @@ input[type="email"],
 textarea{
   font-size: 1rem;
   transition: border 250ms ease;
+  border-radius: 0;
   &:focus{
     border-bottom-color:$blue;
   }

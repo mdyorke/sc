@@ -11,7 +11,7 @@
 
 .pattern-dark {
   background: $charcoal url('../images/logo-pattern-white.png');
-  background-size: 40%;
+  background-size: 480px;
 }
 @media (max-width:$bp-max-m) {
   .parallax:not(.pattern-dark) {
@@ -20,6 +20,5 @@
 
   .parallax {
     background-position: center !important;
-    background-size: 40%;
   }
 }

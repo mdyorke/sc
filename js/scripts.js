@@ -73,12 +73,20 @@
       }
     });
 
-  var sectionSolutions = new Waypoint({
-    element: document.getElementById('section-solutions'),
+  var sectionSolutionsHeader = new Waypoint({
+    element: $('#section-solutions h2'),
     handler: function(direction) {
-      $('#section-solutions').addClass('viewed');
+      $('#section-solutions h2').addClass('viewed');
     },
-    offset: '75%'
+    offset: '80%'
+  });
+
+  var sectionSolutions = new Waypoint({
+    element: $('#section-solutions .solutions'),
+    handler: function(direction) {
+      $('#section-solutions .solutions').addClass('viewed');
+    },
+    offset: '80%'
   });
 
   var sectionPriciples = new Waypoint({
@@ -86,7 +94,7 @@
     handler: function(direction) {
       $('#section-principles').addClass('viewed');
     },
-    offset: '75%'
+    offset: '80%'
   });
 
   var sectionRequest = new Waypoint({
@@ -94,7 +102,7 @@
     handler: function(direction) {
       $('#request').addClass('viewed');
     },
-    offset: '75%'
+    offset: '80%'
   });
 
 

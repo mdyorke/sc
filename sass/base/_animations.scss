@@ -9,7 +9,6 @@
     transform: none;
   }
 }
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -21,7 +20,6 @@
     transform: none;
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -32,30 +30,24 @@
   }
 }
 
-
 #section-solutions {
-  .manager,
-  .tenant,
+  .solutions,
   h2 {
     opacity: 0;
-  }
 
-  &.viewed {
-    .manager,
-    .tenant,
-    h2 {
+    &.viewed {
       animation-name: fadeInDown;
-      animation-duration: 500ms;
+      animation-duration: 750ms;
       animation-fill-mode: both;
     }
+  }
 
-    .manager {
-      animation-delay: 300ms;
-    }
+  .solutions.viewed .manager {
+    animation-delay: 300ms;
+  }
 
-    .tenant {
-      animation-delay: 750ms;
-    }
+  .solutions.viewed .tenant {
+    animation-delay: 750ms;
   }
 }
 
@@ -76,9 +68,9 @@
     }
 
     .principle,
-    .principles{
+    .principles {
       animation-name: fadeIn;
-      animation-duration: 500ms;
+      animation-duration: 750ms;
       animation-fill-mode: both;
     }
 
@@ -112,7 +104,7 @@
   &.viewed {
     .card {
       animation-name: fadeInDown;
-      animation-duration: 500ms;
+      animation-duration: 750ms;
       animation-fill-mode: both;
     }
   }

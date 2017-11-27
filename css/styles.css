@@ -6287,15 +6287,16 @@ input[type="email"],
 textarea {
   font-size: 1rem;
   transition: border 250ms ease;
+  border-radius: 0;
 }
-/* line 14, ../sass/base/_forms.scss */
+/* line 15, ../sass/base/_forms.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   border-bottom-color: #1380eb;
 }
 
-/* line 20, ../sass/base/_forms.scss */
+/* line 21, ../sass/base/_forms.scss */
 input[type="text"],
 input[type="email"] {
   border-width: 0 0 1px 0;
@@ -6305,7 +6306,7 @@ input[type="email"] {
   color: rgba(18, 18, 18, 0.7);
 }
 
-/* line 28, ../sass/base/_forms.scss */
+/* line 29, ../sass/base/_forms.scss */
 input[type="submit"] {
   display: inline-block;
   cursor: pointer;
@@ -6336,12 +6337,12 @@ input[type="submit"]:hover, input[type="submit"].active {
 }
 
 @media (min-width: 30em) {
-  /* line 33, ../sass/base/_forms.scss */
+  /* line 34, ../sass/base/_forms.scss */
   .form-item {
     margin-bottom: 2.5rem;
   }
 
-  /* line 39, ../sass/base/_forms.scss */
+  /* line 40, ../sass/base/_forms.scss */
   input[type="text"],
   input[type="email"],
   textarea {
@@ -6399,13 +6400,13 @@ ul.checklist li:not(:last-child) {
 }
 
 @keyframes fadeInUp {
-  /* line 14, ../sass/base/_animations.scss */
+  /* line 13, ../sass/base/_animations.scss */
   from {
     opacity: 0;
     transform: translate3d(0, 50px, 0);
   }
 
-  /* line 19, ../sass/base/_animations.scss */
+  /* line 18, ../sass/base/_animations.scss */
   to {
     opacity: 1;
     transform: none;
@@ -6413,47 +6414,45 @@ ul.checklist li:not(:last-child) {
 }
 
 @keyframes fadeIn {
-  /* line 26, ../sass/base/_animations.scss */
+  /* line 24, ../sass/base/_animations.scss */
   from {
     opacity: 0;
   }
 
-  /* line 30, ../sass/base/_animations.scss */
+  /* line 28, ../sass/base/_animations.scss */
   to {
     opacity: 1;
   }
 }
 
-/* line 39, ../sass/base/_animations.scss */
-#section-solutions .manager,
-#section-solutions .tenant,
+/* line 35, ../sass/base/_animations.scss */
+#section-solutions .solutions,
 #section-solutions h2 {
   opacity: 0;
 }
-/* line 46, ../sass/base/_animations.scss */
-#section-solutions.viewed .manager,
-#section-solutions.viewed .tenant,
-#section-solutions.viewed h2 {
+/* line 38, ../sass/base/_animations.scss */
+#section-solutions .solutions.viewed,
+#section-solutions h2.viewed {
   animation-name: fadeInDown;
-  animation-duration: 500ms;
+  animation-duration: 750ms;
   animation-fill-mode: both;
 }
-/* line 52, ../sass/base/_animations.scss */
-#section-solutions.viewed .manager {
+/* line 45, ../sass/base/_animations.scss */
+#section-solutions .solutions.viewed .manager {
   animation-delay: 300ms;
 }
-/* line 56, ../sass/base/_animations.scss */
-#section-solutions.viewed .tenant {
+/* line 49, ../sass/base/_animations.scss */
+#section-solutions .solutions.viewed .tenant {
   animation-delay: 750ms;
 }
 
-/* line 65, ../sass/base/_animations.scss */
+/* line 57, ../sass/base/_animations.scss */
 #section-principles .principle,
 #section-principles .principles,
 #section-principles h2 {
   opacity: 0;
 }
-/* line 72, ../sass/base/_animations.scss */
+/* line 64, ../sass/base/_animations.scss */
 #section-principles.viewed .principle,
 #section-principles.viewed .principles,
 #section-principles.viewed h2 {
@@ -6461,42 +6460,42 @@ ul.checklist li:not(:last-child) {
   animation-duration: 750ms;
   animation-fill-mode: both;
 }
-/* line 79, ../sass/base/_animations.scss */
+/* line 71, ../sass/base/_animations.scss */
 #section-principles.viewed .principle,
 #section-principles.viewed .principles {
   animation-name: fadeIn;
-  animation-duration: 500ms;
+  animation-duration: 750ms;
   animation-fill-mode: both;
 }
-/* line 85, ../sass/base/_animations.scss */
+/* line 77, ../sass/base/_animations.scss */
 #section-principles.viewed .principles {
   animation-delay: 250ms;
 }
-/* line 89, ../sass/base/_animations.scss */
+/* line 81, ../sass/base/_animations.scss */
 #section-principles.viewed .innovation {
   animation-delay: 500ms;
 }
-/* line 93, ../sass/base/_animations.scss */
+/* line 85, ../sass/base/_animations.scss */
 #section-principles.viewed .flexibility {
   animation-delay: 800ms;
 }
-/* line 97, ../sass/base/_animations.scss */
+/* line 89, ../sass/base/_animations.scss */
 #section-principles.viewed .support {
   animation-delay: 1200ms;
 }
-/* line 101, ../sass/base/_animations.scss */
+/* line 93, ../sass/base/_animations.scss */
 #section-principles.viewed .company-breif {
   animation-delay: 1500ms;
 }
 
-/* line 108, ../sass/base/_animations.scss */
+/* line 100, ../sass/base/_animations.scss */
 #request .card {
   opacity: 0;
 }
-/* line 113, ../sass/base/_animations.scss */
+/* line 105, ../sass/base/_animations.scss */
 #request.viewed .card {
   animation-name: fadeInDown;
-  animation-duration: 500ms;
+  animation-duration: 750ms;
   animation-fill-mode: both;
 }
 
@@ -6542,7 +6541,7 @@ body {
   height: 100vh;
   max-height: 930px;
   position: relative;
-  background-size: auto calc(100% + 200px);
+  background-size: auto calc(100% + 300px);
 }
 /* line 9, ../sass/components/_header.scss */
 #header:before {
@@ -6646,7 +6645,7 @@ body {
 /* line 67, ../sass/components/_solutions.scss */
 #section-solutions .manager {
   background: url("../images/manager.jpg") no-repeat center;
-  background-size: auto calc(100% + 200px);
+  background-size: auto calc(100% + 300px);
 }
 /* line 71, ../sass/components/_solutions.scss */
 #section-solutions .manager .front > h3 {
@@ -6655,7 +6654,7 @@ body {
 /* line 76, ../sass/components/_solutions.scss */
 #section-solutions .tenant {
   background: url("../images/tenant.jpg") no-repeat center;
-  background-size: auto calc(100% + 200px);
+  background-size: auto calc(100% + 300px);
 }
 /* line 80, ../sass/components/_solutions.scss */
 #section-solutions .tenant .front > h3 {
@@ -6692,7 +6691,7 @@ body {
 /* line 6, ../sass/components/_principles.scss */
 .principles {
   background: url("../images/founding-principles-bkg.jpg") no-repeat center;
-  background-size: auto calc(100% + 200px);
+  background-size: auto calc(100% + 300px);
 }
 /* line 11, ../sass/components/_principles.scss */
 .principles > div {
@@ -6839,7 +6838,7 @@ body {
 /* line 12, ../sass/components/_misc.scss */
 .pattern-dark {
   background: #121212 url("../images/logo-pattern-white.png");
-  background-size: 40%;
+  background-size: 480px;
 }
 
 @media (max-width: 39.99em) {
@@ -6851,6 +6850,5 @@ body {
   /* line 21, ../sass/components/_misc.scss */
   .parallax {
     background-position: center !important;
-    background-size: 40%;
   }
 }
