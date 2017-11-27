@@ -1,0 +1,42 @@
+.form-item{
+  margin-bottom: 1.5rem;
+}
+
+input:focus{
+  outline: 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+  font-size: 1rem;
+  transition: border 250ms ease;
+  &:focus{
+    border-bottom-color:$blue;
+  }
+}
+
+input[type="text"],
+input[type="email"] {
+  border-width: 0 0 1px 0;
+  border-bottom-color: $charcoal-10;
+  padding: 16px 0;
+  width: 100%;
+  color:$charcoal-70;
+}
+
+input[type="submit"] {
+  @include button(lg, blue);
+}
+
+@media (min-width:$bp-min-ns) {
+  .form-item{
+    margin-bottom: 2.5rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea{
+    font-size: 1.125rem;
+  }
+}

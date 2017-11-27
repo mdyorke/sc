@@ -1,0 +1,25 @@
+.card {
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid $charcoal;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.pattern-dark {
+  background: $charcoal url('../images/logo-pattern-white.png');
+  background-size: 40%;
+}
+@media (max-width:$bp-max-m) {
+  .parallax:not(.pattern-dark) {
+    background-size: cover;
+  }
+
+  .parallax {
+    background-position: center !important;
+    background-size: 40%;
+  }
+}

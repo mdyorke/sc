@@ -1,0 +1,104 @@
+
+
+#section-solutions {
+  > h2 {
+    background: url("../images/icons/icon-building.png") no-repeat top center;
+    background-size: auto 32px;
+  }
+
+  .solution {
+    height: 520px;
+    position: relative;
+
+    &:before {
+      content: '';
+      background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.80) 100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    .back {
+      display: none;
+    }
+
+    .back,
+    .front {
+      position: relative;
+      z-index: 10;
+    }
+
+    .front > h3 {
+      padding-top: 44px;
+      background-size: auto 32px;
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .solution.open {
+    .back {
+      display: block;
+    }
+
+    .front {
+      display: none;
+    }
+
+    &:before {
+      content: '';
+      background-color: rgba(0,0,0,0.60);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+  }
+
+  .solution .items ul:not(.open) {
+    display: none;
+  }
+
+  .manager {
+    background: url("../images/manager.jpg") no-repeat center;
+    background-size: auto calc(100% + 200px);
+
+    .front > h3 {
+      background-image: url("../images/icons/icon-house.png");
+    }
+  }
+
+  .tenant {
+    background: url("../images/tenant.jpg") no-repeat center;
+    background-size: auto calc(100% + 200px);
+
+    .front > h3 {
+      background-image: url("../images/icons/icon-key.png");
+    }
+  }
+}
+@media (min-width:$bp-min-ns) {
+  #section-solutions {
+    > h2 {
+      background-size: auto 48px;
+    }
+
+    .solution {
+      height: 536px;
+    }
+  }
+}
+@media (max-width:$bp-max-m) {
+  #section-solutions .manager {
+    background-position: left center !important;
+  }
+
+  #section-solutions .tenant {
+    background-position: right center !important;
+  }
+}

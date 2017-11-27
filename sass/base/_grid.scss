@@ -184,7 +184,7 @@
   flex: 0 0 100%;
   max-width: 100%;
 }
-@media (min-width: $bp-min-sm) {
+@media (min-width: $bp-min-ns) {
   .container {
     max-width: 792px;
   }
@@ -276,7 +276,7 @@
     max-width: 100%;
   }
 }
-@media (min-width: $bp-min-md) {
+@media (min-width: $bp-min-m) {
   .container {
     max-width: 960px;
   }
@@ -368,7 +368,7 @@
     max-width: 100%;
   }
 }
-@media (min-width: $bp-min-lg) {
+@media (min-width: $bp-min-l) {
   .container {
     max-width: 1168px;
   }

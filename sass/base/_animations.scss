@@ -1,0 +1,119 @@
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -25px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+#section-solutions {
+  .manager,
+  .tenant,
+  h2 {
+    opacity: 0;
+  }
+
+  &.viewed {
+    .manager,
+    .tenant,
+    h2 {
+      animation-name: fadeInDown;
+      animation-duration: 500ms;
+      animation-fill-mode: both;
+    }
+
+    .manager {
+      animation-delay: 300ms;
+    }
+
+    .tenant {
+      animation-delay: 750ms;
+    }
+  }
+}
+
+#section-principles {
+  .principle,
+  .principles,
+  h2 {
+    opacity: 0;
+  }
+
+  &.viewed {
+    .principle,
+    .principles,
+    h2 {
+      animation-name: fadeInDown;
+      animation-duration: 750ms;
+      animation-fill-mode: both;
+    }
+
+    .principle,
+    .principles{
+      animation-name: fadeIn;
+      animation-duration: 500ms;
+      animation-fill-mode: both;
+    }
+
+    .principles {
+      animation-delay: 250ms;
+    }
+
+    .innovation {
+      animation-delay: 500ms;
+    }
+
+    .flexibility {
+      animation-delay: 800ms;
+    }
+
+    .support {
+      animation-delay: 1200ms;
+    }
+
+    .company-breif {
+      animation-delay: 1500ms;
+    }
+  }
+}
+
+#request {
+  .card {
+    opacity: 0;
+  }
+
+  &.viewed {
+    .card {
+      animation-name: fadeIn;
+      animation-duration: 500ms;
+      animation-fill-mode: both;
+    }
+  }
+}

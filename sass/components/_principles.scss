@@ -1,15 +1,58 @@
+#section-principles > h2 {
+  background: url("../images/icons/icon-award.png") no-repeat top center;
+  background-size: auto 32px;
+}
+
 .principles {
   background: url("../images/founding-principles-bkg.jpg") no-repeat center;
+  background-size:auto calc(100% + 200px);
+  
 
-  .container > div {
+  > div {
+    max-width: 1264px;
+  }
+
+  .principle {
     background-color: $charcoal-80;
+    border-radius: 4px;
+    border-top: 4px solid $blue;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
   }
 
-  .container > div:not(.company-breif) {
-    width: 31%;
+  .principle:not(.company-breif) {
+    h4 {
+      padding-top: 64px;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: auto 36px;
+    }
   }
 
-  .company-breif {
-    width: 75%;
+  .innovation h4 {
+    background-image: url("../images/icons/icon-bar-graph.png");
+  }
+
+  .flexibility h4 {
+    background-image: url("../images/icons/icon-expand.png");
+  }
+
+  .support h4 {
+    background-image: url("../images/icons/icon-support.png");
+  }
+
+}
+@media (min-width:$bp-min-l) {
+  #section-principles > h2 {
+    background-size: auto 48px;
+  }
+
+  .principles {
+    .principle:not(.company-breif) {
+      width: 31%;
+    }
+
+    .company-breif {
+      max-width: 736px;
+    }
   }
 }

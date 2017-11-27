@@ -1,0 +1,44 @@
+.request-access {
+  .form-actions {
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+@media (min-width:$bp-min-ns) {
+  .request-access {
+    .address,
+    .manager-name {
+      width: 100%;
+    }
+
+    .city,
+    .email {
+      margin-right: 4%;
+    }
+
+    .email {
+      width: 68%;
+    }
+
+    .city,
+    .zip {
+      width: 48%;
+    }
+
+    .units {
+      width: 28%;
+    }
+  }
+}
+
+@media (max-width:$bp-max-ns) {
+  .request-access {
+    .form-item {
+      width: 100%;
+    }
+  }
+}

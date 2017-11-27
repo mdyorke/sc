@@ -1,13 +1,37 @@
 #header {
-  background: url("../images/header-bkg.jpg") no-repeat center;
-  border-top: 8px solid $blue;
+  background-image: url("../images/header-bkg.jpg");
+  border-top: 4px solid $blue;
   height: 100vh;
-  h1 {
-    height: 64px;
-    background: url("../images/logo-white.png") no-repeat center;
+  max-height: 930px;
+  position: relative;
+  background-size:auto calc(100% + 200px);
+
+  &:before {
+    background-image: linear-gradient(-180deg, rgba(0,0,0,0.30) 0%, rgba(0,0,0,0.60) 100%);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
   }
 
-  .btn-group [class*="btn"]{
-    min-width: 230px;
+  > .container {
+    z-index: 2;
+  }
+
+  h1 {
+    height: 40px;
+    background: url("../images/logo-white.png") no-repeat center;
+  }
+}
+@media (min-width:$bp-min-m) {
+  #header {
+    border-top-width: 8px;
+
+    h1 {
+      height: 56px;
+    }
   }
 }

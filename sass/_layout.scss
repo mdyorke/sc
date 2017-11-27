@@ -1,3 +1,28 @@
+html,
+body{
+  height: 100%;
+}
+
+html{
+  background: #111 url('../images/logo-pattern-white.png');
+  background-attachment: fixed;
+}
+
 body{
   background-color: $charcoal;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 40px rgba(0,0,0,.75);
+}
+
+#header,
+#main,
+#footer{
+  flex-shrink: 0;
+}
+
+
+#main{
+  flex-grow: 1;
 }

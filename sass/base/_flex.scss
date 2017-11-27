@@ -170,7 +170,7 @@
 .order-last {
   order: 99999;
 }
-@media (min-width: $bp-min-sm) {
+@media (min-width: $bp-min-ns) {
   .flex-ns {
     display: flex;
   }
@@ -343,7 +343,7 @@
     order: 99999;
   }
 }
-@media (min-width: $bp-min-md) {
+@media (min-width: $bp-min-m) {
   .flex-m {
     display: flex;
   }
@@ -516,7 +516,7 @@
     order: 99999;
   }
 }
-@media (min-width: $bp-min-lg) {
+@media (min-width: $bp-min-l) {
   .flex-l {
     display: flex;
   }

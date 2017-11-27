@@ -24,13 +24,8 @@
   background-color: #fff;
 }
 
-// Theme Specific
-.pattern-dark{
-  background-image: url('../images/logo-pattern-white.png');
-  background-size: 40%;
-}
 
-@media (min-width:$bp-min-sm) {
+@media (min-width:$bp-min-ns) {
   .cover-ns {
     background-size: cover!important;
   }
@@ -39,7 +34,7 @@
     background-size: contain!important;
   }
 }
-@media (min-width:$bp-min-md) {
+@media (min-width:$bp-min-m) {
   .cover-m {
     background-size: cover!important;
   }
@@ -48,7 +43,7 @@
     background-size: contain!important;
   }
 }
-@media (min-width:$bp-min-lg) {
+@media (min-width:$bp-min-l) {
   .cover-l {
     background-size: cover!important;
   }

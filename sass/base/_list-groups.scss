@@ -1,0 +1,32 @@
+ul.checklist{
+  list-style: none;
+  padding:0;
+  margin:0;
+  font-size: .9rem;
+  li{
+    padding-left: 24px;
+    background-image: url('../images/icons/check-green.png');
+    background-position:  top 5px left;
+    background-repeat: no-repeat;
+    background-size: auto 10px;
+  }
+
+
+  li:not(:last-child){
+    margin-bottom:1rem;
+  }
+}
+
+@media (min-width:$bp-min-ns){
+  ul.checklist{
+    font-size: 1rem;
+    li{
+      padding-left: 40px;
+      background-position:  top 2px left;
+      background-size: auto 14px;
+    }
+    li:not(:last-child){
+      margin-bottom:1.5rem;
+    }
+  }
+}

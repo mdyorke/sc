@@ -49,7 +49,7 @@
   table-layout: fixed;
   width: 100%;
 }
-@media (min-width: $bp-min-sm) {
+@media (min-width: $bp-min-ns) {
   .dn-ns {
     display: none;
   }
@@ -99,7 +99,7 @@
     width: 100%;
   }
 }
-@media (min-width: $bp-min-md) {
+@media (min-width: $bp-min-m) {
   .dn-m {
     display: none;
   }
@@ -149,7 +149,7 @@
     width: 100%;
   }
 }
-@media (min-width: $bp-min-lg) {
+@media (min-width: $bp-min-l) {
   .dn-l {
     display: none;
   }

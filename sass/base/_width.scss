@@ -85,7 +85,7 @@
 .w-auto {
   width: auto;
 }
-@media (min-width:$bp-min-sm) {
+@media (min-width:$bp-min-ns) {
   .w1-ns {
     width: 1rem;
   }
@@ -174,7 +174,7 @@
     width: auto;
   }
 }
-@media (min-width:$bp-min-md) {
+@media (min-width:$bp-min-m) {
   .w1-m {
     width: 1rem;
   }
@@ -263,7 +263,7 @@
     width: auto;
   }
 }
-@media (min-width:$bp-min-lg) {
+@media (min-width:$bp-min-l) {
   .w1-l {
     width: 1rem;
   }

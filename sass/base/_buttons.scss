@@ -6,8 +6,11 @@
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 3px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.2;
+  transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 
   &:focus {
     outline: 0;
@@ -21,20 +24,47 @@
     color: $white;
     border-color: $white;
     background-color: transparent;
+
+    &:hover,
+    &.active {
+      background-color: #fff;
+      color: $charcoal;
+    }
   }
   @if $color == blue {
     color: #fff;
     border-color: rgba(0,0,0,0.24);
     background-color: $blue;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+
+    &:hover,
+    &.active {
+      background-color: tint($blue, 15%);
+    }
+  }
+  @if $size == xs {
+    padding: 12px 20px;
+    font-size: 12px;
   }
   @if $size == sm {
-    padding: 16px 32px;
-    font-size: 14px;
+    padding: 12px 20px;
+    font-size: 12px;
+    @media (min-width: $bp-min-m) {
+      padding: 12px 24px;
+      font-size: 14px;
+    }
   }
   @if $size == md {
-    padding: 16px 32px;
-    font-size: 1rem;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    @media (min-width: $bp-min-m) {
+      padding: 16px 32px;
+      font-size: 1rem;
+    }
+  }
+  @if $size == lg {
+    padding: 16px 40px;
+    font-size: 1.125rem;
   }
 }
 
@@ -46,13 +76,24 @@
   @include button(md, white);
 }
 
+.btn-white-outlined-xs {
+  @include button(xs, white-outlined);
+}
+
 .btn-white-outlined-sm {
   @include button(sm, white-outlined);
 }
 
 .btn-white-outlined {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
   @include button(md, white-outlined);
+}
+
+.btn-white-outlined-lg {
+  @include button(lg, white-outlined);
+}
+
+.btn-blue-xs {
+  @include button(xs, blue);
 }
 
 .btn-blue-sm {
@@ -61,5 +102,8 @@
 
 .btn-blue {
   @include button(md, blue);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+
+.btn-blue-lg {
+  @include button(lg, blue);
 }

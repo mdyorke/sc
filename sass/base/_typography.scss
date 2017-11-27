@@ -26,7 +26,7 @@ h5,
 h6 {
   margin: 0 0 1.5rem;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .h1,
@@ -74,4 +74,152 @@ h6 {
 .headline-3{
   font-size: 4rem;
 
+}
+
+@media (min-width: $bp-min-ns){
+  .h1-ns,
+  h1-ns {
+    font-size: 2.5rem;
+  }
+
+  .h2-ns,
+  h2-ns {
+    font-size: 2.25rem;
+  }
+
+  .h3-ns,
+  h3-ns {
+    font-size: 2rem;
+  }
+
+  .h4-ns,
+  h4-ns {
+    font-size: 1.75rem;
+  }
+
+  .h5-ns,
+  h5-ns {
+    font-size: 1.5rem;
+  }
+
+  .h6-ns,
+  h6-ns {
+    font-size: 1.25rem;
+  }
+
+  // Headline
+
+  .headline-1-ns{
+    font-size: 5rem;
+  }
+
+
+  .headline-2-ns{
+    font-size: 4.5rem;
+
+  }
+
+  .headline-3-ns{
+    font-size: 4rem;
+
+  }
+}
+
+@media (min-width: $bp-min-m){
+  .h1-m,
+  h1-m {
+    font-size: 2.5rem;
+  }
+
+  .h2-m,
+  h2-m {
+    font-size: 2.25rem;
+  }
+
+  .h3-m,
+  h3-m {
+    font-size: 2rem;
+  }
+
+  .h4-m,
+  h4-m {
+    font-size: 1.75rem;
+  }
+
+  .h5-m,
+  h5-m {
+    font-size: 1.5rem;
+  }
+
+  .h6-m,
+  h6-m {
+    font-size: 1.25rem;
+  }
+
+  // Headline
+
+  .headline-1-m{
+    font-size: 5rem;
+  }
+
+
+  .headline-2-m{
+    font-size: 4.5rem;
+
+  }
+
+  .headline-3-m{
+    font-size: 4rem;
+
+  }
+}
+
+
+@media (min-width: $bp-min-l){
+  .h1-l,
+  h1-l {
+    font-size: 2.5rem;
+  }
+
+  .h2-l,
+  h2-l {
+    font-size: 2.25rem;
+  }
+
+  .h3-l,
+  h3-l {
+    font-size: 2rem;
+  }
+
+  .h4-l,
+  h4-l {
+    font-size: 1.75rem;
+  }
+
+  .h5-l,
+  h5-l {
+    font-size: 1.5rem;
+  }
+
+  .h6-l,
+  h6-l {
+    font-size: 1.25rem;
+  }
+
+  // Headline
+
+  .headline-1-l{
+    font-size: 5rem;
+  }
+
+
+  .headline-2-l{
+    font-size: 4.5rem;
+
+  }
+
+  .headline-3-l{
+    font-size: 4rem;
+
+  }
 }
