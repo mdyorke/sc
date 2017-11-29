@@ -6801,27 +6801,29 @@ body {
   .request-access .manager-name {
     width: 100%;
   }
-  /* line 19, ../sass/components/_request-access.scss */
+  /* line 20, ../sass/components/_request-access.scss */
   .request-access .city,
-  .request-access .email {
+  .request-access .email,
+  .request-access .state {
     margin-right: 4%;
   }
-  /* line 23, ../sass/components/_request-access.scss */
+  /* line 24, ../sass/components/_request-access.scss */
   .request-access .email {
     width: 68%;
   }
-  /* line 28, ../sass/components/_request-access.scss */
+  /* line 30, ../sass/components/_request-access.scss */
   .request-access .city,
-  .request-access .zip {
-    width: 48%;
+  .request-access .zip,
+  .request-access .state {
+    width: 30.66%;
   }
-  /* line 32, ../sass/components/_request-access.scss */
+  /* line 34, ../sass/components/_request-access.scss */
   .request-access .units {
     width: 28%;
   }
 }
 @media (max-width: 29.99em) {
-  /* line 40, ../sass/components/_request-access.scss */
+  /* line 42, ../sass/components/_request-access.scss */
   .request-access .form-item {
     width: 100%;
   }
