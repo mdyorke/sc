@@ -461,7 +461,7 @@ th {
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
   transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
   text-transform: uppercase;
@@ -493,7 +493,7 @@ th {
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
   transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
   text-transform: uppercase;
@@ -525,7 +525,7 @@ th {
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
   transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
   text-transform: uppercase;
@@ -555,7 +555,7 @@ th {
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
   transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
   text-transform: uppercase;
@@ -592,7 +592,7 @@ th {
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
   transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
   text-transform: uppercase;
@@ -629,7 +629,7 @@ th {
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
   transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
   text-transform: uppercase;
@@ -659,7 +659,7 @@ th {
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
   transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
   text-transform: uppercase;
@@ -689,7 +689,7 @@ th {
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
   transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
   text-transform: uppercase;
@@ -726,7 +726,7 @@ th {
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
   transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
   text-transform: uppercase;
@@ -763,7 +763,7 @@ th {
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
   transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
   text-transform: uppercase;
@@ -789,8 +789,8 @@ th {
 body {
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 400;
-  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
   color: white;
 }
 
@@ -813,7 +813,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 1.5rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2;
 }
 
@@ -6315,7 +6315,7 @@ input[type="submit"] {
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
   transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
   text-transform: uppercase;
@@ -6425,74 +6425,105 @@ ul.checklist li:not(:last-child) {
   }
 }
 
-/* line 35, ../sass/base/_animations.scss */
-#section-solutions .solutions,
+/* line 37, ../sass/base/_animations.scss */
+#header .btn-group,
+#header h1,
+#header h2 {
+  animation-duration: 500ms;
+  animation-name: fadeInDown;
+  animation-fill-mode: both;
+}
+/* line 43, ../sass/base/_animations.scss */
+#header h1 {
+  animation-delay: 400ms;
+}
+/* line 47, ../sass/base/_animations.scss */
+#header h2 {
+  animation-delay: 600ms;
+}
+/* line 51, ../sass/base/_animations.scss */
+#header .btn-group {
+  animation-delay: 800ms;
+}
+
+/* line 58, ../sass/base/_animations.scss */
 #section-solutions h2 {
   opacity: 0;
 }
-/* line 38, ../sass/base/_animations.scss */
-#section-solutions .solutions.viewed,
+/* line 61, ../sass/base/_animations.scss */
 #section-solutions h2.viewed {
   animation-name: fadeInDown;
   animation-duration: 750ms;
   animation-fill-mode: both;
 }
-/* line 45, ../sass/base/_animations.scss */
-#section-solutions .solutions.viewed .manager {
-  animation-delay: 300ms;
-}
-/* line 49, ../sass/base/_animations.scss */
-#section-solutions .solutions.viewed .tenant {
-  animation-delay: 750ms;
-}
-
-/* line 57, ../sass/base/_animations.scss */
-#section-principles .principle,
-#section-principles .principles,
-#section-principles h2 {
+/* line 68, ../sass/base/_animations.scss */
+#section-solutions .solutions .solution {
   opacity: 0;
 }
-/* line 64, ../sass/base/_animations.scss */
-#section-principles.viewed .principle,
-#section-principles.viewed .principles,
-#section-principles.viewed h2 {
+/* line 72, ../sass/base/_animations.scss */
+#section-solutions .solutions.viewed .solution {
   animation-name: fadeInDown;
   animation-duration: 750ms;
   animation-fill-mode: both;
 }
-/* line 71, ../sass/base/_animations.scss */
-#section-principles.viewed .principle,
-#section-principles.viewed .principles {
+/* line 78, ../sass/base/_animations.scss */
+#section-solutions .solutions.viewed .manager {
+  animation-delay: 300ms;
+}
+/* line 82, ../sass/base/_animations.scss */
+#section-solutions .solutions.viewed .tenant {
+  animation-delay: 750ms;
+}
+
+/* line 88, ../sass/base/_animations.scss */
+#section-principles > h2 {
+  opacity: 0;
+}
+/* line 91, ../sass/base/_animations.scss */
+#section-principles > h2.viewed {
+  animation-name: fadeInDown;
+  animation-duration: 750ms;
+  animation-fill-mode: both;
+}
+
+/* line 99, ../sass/base/_animations.scss */
+.principles {
+  opacity: 0;
+}
+/* line 102, ../sass/base/_animations.scss */
+.principles.viewed {
+  animation-name: fadeInDown;
+  animation-duration: 750ms;
+  animation-fill-mode: both;
+}
+/* line 107, ../sass/base/_animations.scss */
+.principles.viewed .principle {
   animation-name: fadeIn;
   animation-duration: 750ms;
   animation-fill-mode: both;
 }
-/* line 77, ../sass/base/_animations.scss */
-#section-principles.viewed .principles {
-  animation-delay: 250ms;
-}
-/* line 81, ../sass/base/_animations.scss */
-#section-principles.viewed .innovation {
+/* line 113, ../sass/base/_animations.scss */
+.principles.viewed .innovation {
   animation-delay: 500ms;
 }
-/* line 85, ../sass/base/_animations.scss */
-#section-principles.viewed .flexibility {
+/* line 117, ../sass/base/_animations.scss */
+.principles.viewed .flexibility {
   animation-delay: 800ms;
 }
-/* line 89, ../sass/base/_animations.scss */
-#section-principles.viewed .support {
+/* line 121, ../sass/base/_animations.scss */
+.principles.viewed .support {
   animation-delay: 1200ms;
 }
-/* line 93, ../sass/base/_animations.scss */
-#section-principles.viewed .company-breif {
+/* line 125, ../sass/base/_animations.scss */
+.principles.viewed .company-breif {
   animation-delay: 1500ms;
 }
 
-/* line 100, ../sass/base/_animations.scss */
+/* line 132, ../sass/base/_animations.scss */
 #request .card {
   opacity: 0;
 }
-/* line 105, ../sass/base/_animations.scss */
+/* line 137, ../sass/base/_animations.scss */
 #request.viewed .card {
   animation-name: fadeInDown;
   animation-duration: 750ms;
@@ -6581,17 +6612,17 @@ body {
   padding: 24px 0;
 }
 
-/* line 4, ../sass/components/_solutions.scss */
+/* line 2, ../sass/components/_solutions.scss */
 #section-solutions > h2 {
   background: url("../images/icons/icon-building.png") no-repeat top center;
   background-size: auto 32px;
 }
-/* line 9, ../sass/components/_solutions.scss */
+/* line 6, ../sass/components/_solutions.scss */
 #section-solutions .solution {
   height: 520px;
   position: relative;
 }
-/* line 13, ../sass/components/_solutions.scss */
+/* line 10, ../sass/components/_solutions.scss */
 #section-solutions .solution:before {
   content: '';
   background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
@@ -6602,32 +6633,32 @@ body {
   bottom: 0;
   z-index: 1;
 }
-/* line 24, ../sass/components/_solutions.scss */
+/* line 21, ../sass/components/_solutions.scss */
 #section-solutions .solution .back {
   display: none;
 }
-/* line 29, ../sass/components/_solutions.scss */
+/* line 26, ../sass/components/_solutions.scss */
 #section-solutions .solution .back,
 #section-solutions .solution .front {
   position: relative;
   z-index: 10;
 }
-/* line 34, ../sass/components/_solutions.scss */
+/* line 31, ../sass/components/_solutions.scss */
 #section-solutions .solution .front > h3 {
   padding-top: 44px;
   background-size: auto 32px;
   background-position: top center;
   background-repeat: no-repeat;
 }
-/* line 43, ../sass/components/_solutions.scss */
+/* line 40, ../sass/components/_solutions.scss */
 #section-solutions .solution.open .back {
   display: block;
 }
-/* line 47, ../sass/components/_solutions.scss */
+/* line 44, ../sass/components/_solutions.scss */
 #section-solutions .solution.open .front {
   display: none;
 }
-/* line 51, ../sass/components/_solutions.scss */
+/* line 48, ../sass/components/_solutions.scss */
 #section-solutions .solution.open:before {
   content: '';
   background-color: rgba(0, 0, 0, 0.6);
@@ -6638,46 +6669,61 @@ body {
   bottom: 0;
   z-index: 1;
 }
-/* line 63, ../sass/components/_solutions.scss */
+/* line 60, ../sass/components/_solutions.scss */
 #section-solutions .solution .items ul:not(.open) {
   display: none;
 }
-/* line 67, ../sass/components/_solutions.scss */
+/* line 64, ../sass/components/_solutions.scss */
 #section-solutions .manager {
   background: url("../images/manager.jpg") no-repeat center;
   background-size: auto calc(100% + 300px);
 }
-/* line 71, ../sass/components/_solutions.scss */
+/* line 68, ../sass/components/_solutions.scss */
 #section-solutions .manager .front > h3 {
   background-image: url("../images/icons/icon-house.png");
 }
-/* line 76, ../sass/components/_solutions.scss */
+/* line 73, ../sass/components/_solutions.scss */
 #section-solutions .tenant {
   background: url("../images/tenant.jpg") no-repeat center;
   background-size: auto calc(100% + 300px);
 }
-/* line 80, ../sass/components/_solutions.scss */
+/* line 77, ../sass/components/_solutions.scss */
 #section-solutions .tenant .front > h3 {
   background-image: url("../images/icons/icon-key.png");
 }
+/* line 82, ../sass/components/_solutions.scss */
+#section-solutions button.close {
+  background-color: transparent;
+  border: 0;
+  line-height: 1;
+  font-size: 1.125rem;
+  position: absolute;
+  top: 16px;
+  right: 4px;
+  padding: 0;
+}
+/* line 92, ../sass/components/_solutions.scss */
+#section-solutions button.close:focus {
+  outline: 0;
+}
 
 @media (min-width: 30em) {
-  /* line 87, ../sass/components/_solutions.scss */
+  /* line 99, ../sass/components/_solutions.scss */
   #section-solutions > h2 {
     background-size: auto 48px;
   }
-  /* line 91, ../sass/components/_solutions.scss */
+  /* line 103, ../sass/components/_solutions.scss */
   #section-solutions .solution {
     height: 536px;
   }
 }
 @media (max-width: 39.99em) {
-  /* line 97, ../sass/components/_solutions.scss */
+  /* line 109, ../sass/components/_solutions.scss */
   #section-solutions .manager {
     background-position: left center !important;
   }
 
-  /* line 101, ../sass/components/_solutions.scss */
+  /* line 113, ../sass/components/_solutions.scss */
   #section-solutions .tenant {
     background-position: right center !important;
   }

@@ -1,11 +1,8 @@
-
-
 #section-solutions {
   > h2 {
     background: url("../images/icons/icon-building.png") no-repeat top center;
     background-size: auto 32px;
   }
-
   .solution {
     height: 520px;
     position: relative;
@@ -79,6 +76,21 @@
 
     .front > h3 {
       background-image: url("../images/icons/icon-key.png");
+    }
+  }
+
+  button.close{
+    background-color: transparent;
+    border:0;
+    line-height: 1;
+    font-size: 1.125rem;
+    position: absolute;
+    top:16px;
+    right:4px;
+    padding:0;
+
+    &:focus{
+      outline: 0;
     }
   }
 }

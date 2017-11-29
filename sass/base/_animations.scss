@@ -29,9 +29,32 @@
     opacity: 1;
   }
 }
+// Hero
+
+#header {
+  .btn-group,
+  h1,
+  h2 {
+    animation-duration: 500ms;
+    animation-name: fadeInDown;
+    animation-fill-mode: both;
+  }
+
+  h1 {
+    animation-delay: 400ms;
+  }
+
+  h2 {
+    animation-delay: 600ms;
+  }
+
+  .btn-group {
+    animation-delay: 800ms;
+  }
+}
+// Solutions
 
 #section-solutions {
-  .solutions,
   h2 {
     opacity: 0;
 
@@ -40,6 +63,16 @@
       animation-duration: 750ms;
       animation-fill-mode: both;
     }
+  }
+
+  .solutions .solution {
+    opacity: 0;
+  }
+
+  .solutions.viewed .solution {
+    animation-name: fadeInDown;
+    animation-duration: 750ms;
+    animation-fill-mode: both;
   }
 
   .solutions.viewed .manager {
@@ -52,30 +85,29 @@
 }
 
 #section-principles {
-  .principle,
-  .principles,
-  h2 {
+  > h2 {
     opacity: 0;
-  }
 
-  &.viewed {
-    .principle,
-    .principles,
-    h2 {
+    &.viewed {
       animation-name: fadeInDown;
       animation-duration: 750ms;
       animation-fill-mode: both;
     }
+  }
+}
 
-    .principle,
-    .principles {
+.principles {
+  opacity: 0;
+
+  &.viewed {
+    animation-name: fadeInDown;
+    animation-duration: 750ms;
+    animation-fill-mode: both;
+
+    .principle {
       animation-name: fadeIn;
       animation-duration: 750ms;
       animation-fill-mode: both;
-    }
-
-    .principles {
-      animation-delay: 250ms;
     }
 
     .innovation {

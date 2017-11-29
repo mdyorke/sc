@@ -5,6 +5,10 @@
   $('.solution button').on("click", function() {
     $(this).closest('.solution').addClass('open');
   });
+  // Close Button
+  $('.solution .close').on("click", function() {
+    $(this).closest('.solution').removeClass('open');
+  });
   // Small Managers Button toggle
   $('button.small-managers').on("click", function() {
     $('.solution .items ul').removeClass('open');
@@ -15,7 +19,7 @@
   // Enterprise Managers toggle
   $('button.enterprise-managers').on("click", function() {
     $('.solution .items ul').removeClass('open');
-    $('.solution .back button').removeClass('active');
+    $('.solution .back .toggles button').removeClass('active');
     $(this).addClass('active');
     $('#enterprise-managers').addClass('open');
   });
@@ -57,18 +61,7 @@
           event.preventDefault();
           $('html, body').animate({
             scrollTop: target.offset().top
-          }, 1000, function() {
-            // Callback after animation
-            // Must change focus!
-            var $target = $(target);
-            $target.focus();
-            if ($target.is(":focus")) { // Checking if the target was focused
-              return false;
-            } else {
-              $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-              $target.focus(); // Set focus again
-            }
-          });
+          }, 1000 );
         }
       }
     });
@@ -76,7 +69,7 @@
   var sectionSolutionsHeader = new Waypoint({
     element: $('#section-solutions h2'),
     handler: function(direction) {
-      $('#section-solutions h2').addClass('viewed');
+      $(this.element).addClass('viewed');
     },
     offset: '80%'
   });
@@ -84,15 +77,25 @@
   var sectionSolutions = new Waypoint({
     element: $('#section-solutions .solutions'),
     handler: function(direction) {
-      $('#section-solutions .solutions').addClass('viewed');
+      $(this.element).addClass('viewed');
+    },
+    offset: '80%'
+  });
+
+  var sectionPriciplesHeader = new Waypoint({
+    element: $('#section-principles > h2'),
+
+    handler: function(direction) {
+      $(this.element).addClass('viewed');
     },
     offset: '80%'
   });
 
   var sectionPriciples = new Waypoint({
-    element: document.getElementById('section-principles'),
+    element: $('.principles'),
+
     handler: function(direction) {
-      $('#section-principles').addClass('viewed');
+      $(this.element).addClass('viewed');
     },
     offset: '80%'
   });
