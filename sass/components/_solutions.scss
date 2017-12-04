@@ -62,7 +62,7 @@
   }
 
   .manager {
-    background: url("../images/manager.jpg") no-repeat center;
+    background: url("../images/manager.jpg") no-repeat left center;
     background-size: auto calc(100% + 300px);
 
     .front > h3 {
@@ -107,7 +107,7 @@
 }
 @media (max-width:$bp-max-m) {
   #section-solutions .manager {
-    background-position: left center !important;
+    background-position: left -210px center !important;
   }
 
   #section-solutions .tenant {

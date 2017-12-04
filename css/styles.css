@@ -6675,7 +6675,7 @@ body {
 }
 /* line 64, ../sass/components/_solutions.scss */
 #section-solutions .manager {
-  background: url("../images/manager.jpg") no-repeat center;
+  background: url("../images/manager.jpg") no-repeat left center;
   background-size: auto calc(100% + 300px);
 }
 /* line 68, ../sass/components/_solutions.scss */
@@ -6720,7 +6720,7 @@ body {
 @media (max-width: 39.99em) {
   /* line 109, ../sass/components/_solutions.scss */
   #section-solutions .manager {
-    background-position: left center !important;
+    background-position: left -210px center !important;
   }
 
   /* line 113, ../sass/components/_solutions.scss */
